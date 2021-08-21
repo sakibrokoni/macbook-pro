@@ -4,9 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mac-Book</title>
+    <!-- Bootstrap-Framework -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    
+    <header>
+        <section class="container-fluid navbar-light bg-light">
+            <nav class="container navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                  <a class="navbar-brand fw-bolder" href="#">iMac</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Store</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active" href="#">macOS</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active" href="#">Overview</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active" href="#">Support</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link active" href="#">Tech Specs</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </section>
+    </header>
+    <main>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                  <img class="img-fluid" src="images/mac.png" alt="" srcset="">
+                </div>
+                <div class="col-md-6  gy-4">
+                  <h1>Customize your Blue 24-inch iMac with Apple M1 Chip.</h1>
+                  <p class="my-3">
+                    Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard-US English.
+                  </p>
+                  <span  class="fw-bold">Memory</span>
+                  <div class="custom-btn mb-4">
+                    <button id="memory-btn-8" type="button" class="custom-btn btn border border-2 rounded-3 btn-md">8GB Unified Memory</button>
+                    <button id="memory-btn-16" type="button" class="custom-btn btn border border-2 rounded-3  btn-md">16GB Unified Memory</button>
+                </div>
+                  <span class="fw-bold">Storage</span>
+                  <div class="custom-btn mb-4">
+                    <button id="storage-btn-256" type="custom-btn button" class="btn border border-2 rounded-3 btn-md">256GB SSD Storage</button>
+                    <button id="storage-btn-512" type="button" class="custom-btn btn border border-2 rounded-3 btn-md">512GB SSD Storage</button>
+                    <button id="storage-btn-1024" type="button" class="custom-btn btn border border-2 rounded-3 btn-md">1TB SSD Storage</button>
+                </div>
+                  <span  class="fw-bold">Choose Your Delivery Option</span>
+                  <div class="custom-btn mb-4">
+                    <button id="delivery-btn-free" type="button" class="custom-btn btn border border-2 rounded-3 btn-md">Friday,Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-btn-charge" type="button" class="custom-btn btn border border-2 rounded-3 btn-md">Friday,Aug 21 Delivery Charge $20</button>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                     <div class="d-flex justify-content-between fw-bolder">
+                         <div><span>Best Price</span></div>
+                         <div>$<span id="best-price">1299</span></div>
+                     </div>
+                     <hr>
+                     <!-- Extra Memory -->
+                     <div class="d-flex justify-content-between fw-bolder">
+                         <div><span>Extra Memory Cost</span></div>
+                         <div>$<span id="memory-cost">0</span></div>
+                     </div>
+                     <hr>
+                     <!-- Extra Storage -->
+                     <div class="d-flex justify-content-between fw-bolder">
+                         <div><span>Extra Storage Cost</span></div>
+                         <div>$<span id="storage-cost">0</span></div>
+                     </div>
+                     <hr>
+                     <!-- Delivery Charge -->
+                     <div class="d-flex justify-content-between fw-bolder">
+                         <div><span>Delivery Charge</span></div>
+                         <div>$<span id="delivery-cost">0</span></div>
+                     </div>
+                     <hr class="border border-1 border-dark">
+                     <!-- Total Price -->
+                     <div class="d-flex justify-content-between fw-bolder mb-3">
+                        <div><span>Total Price</span></div>
+                        <div>$<span id="total-price">1299</span></div>
+                     </div>
+                     <hr>
+                     <!-- Promo Code Section -->
+                     <span>Add Promo Code</span>
+                     <div class="d-flex align-center  ">
+                         
+                         <input id="promo-code" type="text" class="px-3 me-2"> 
+                        <button id="apply-btn" type="button" class="btn btn-danger fw-bolder text-cente">Apply</button>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- Price with Discount -->
+        <hr class="mt-5">
+        <section class="container text-center fw-bolder">
+            <h1> Total : $<span id="overall-price">1299</span></h1>
+        </section>
+        <hr>
+    </main>
+    <footer class="container mt-5">
+        <p class="text-center mb-0 ">Copyright ©Sakib Rokoni 2021</p>
+    </footer> 
+    <!-- Custom Javascript -->
+    <script src="JS/main.js"></script>
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
