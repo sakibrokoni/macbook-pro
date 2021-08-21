@@ -90,6 +90,7 @@ function totalPrice()
 }
 
 // Get last Update price 
+
 function getCurrentPrice(costType)
 {
     const balanceTotal=document.getElementById(costType);
@@ -140,6 +141,7 @@ document.getElementById('delivery-btn-charge').addEventListener('click',function
 })
 
 // For Promo Code
+
 document.getElementById('apply-btn').addEventListener('click',function()
 {
     totalPrice();
